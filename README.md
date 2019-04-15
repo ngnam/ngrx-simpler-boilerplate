@@ -17,3 +17,13 @@
 ```
     npm install &&  npm start
 ```
+
+## deploy to github
+
+```
+🌹  git checkout -b gh-pages
+🌹  git push origin gh-pages
+🌹  npm install -g angular-cli-ghpages
+🌹  ng build --prod --base-href https://[username].github.io/[repo]/
+🌹  npx ngh --repo=https://GH_TOKEN@github.com/organisation/your-repo.git --dir=dist/[project-name]
+```
