@@ -14,7 +14,3 @@ install:
 
 script:
   - npm run build
-
-after_success:
-  deploy:
-    - npm run deploy

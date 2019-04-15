@@ -11,8 +11,7 @@
     "build": "ng build --prod  --base-href https://ngnam.github.io/ngrx-simpler-boilerplate/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "deploy": "npx ngh --repo=https://github.com/ngnam/ngrx-simpler-boilerplate.git --dir=dist/nng-get-json"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
