@@ -1,5 +1,7 @@
 # ngrx-simpler-boilerplate
 
+[![Build Status](https://travis-ci.org/ngnam/ngrx-simpler-boilerplate.svg?branch=master)](https://travis-ci.org/ngnam/ngrx-simpler-boilerplate)
+
 ## Benefits
 
 - A project use ngrx simpler boilerplate load users from component use dispatch action
