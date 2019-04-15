@@ -44,10 +44,6 @@ import * as userActions from './actions/user.actions';
         grid-gap: 1em;
         grid-auto-rows: minmax(10px, auto);
       }
-
-      .nested > span {
-        background: #f5f5f5;
-      }
     `
   ]
 })
