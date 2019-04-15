@@ -10,8 +10,12 @@ import * as userActions from './actions/user.actions';
   template: `
     <div [hidden]="loadedUser$ | async">loading....</div>
     <div class="wrapper">
-      <div *ngFor="let user of (users$ | async)" class="nested">
-        <span>user name: {{ user.name }}</span> <span>description: {{ user.description }}</span>
+      <div *ngFor="let user of (users$ | async)">
+        <span>id: {{ user.id }}</span>
+        <span>mode: {{ user.mode }}</span>
+        <span>name: {{ user.name }}</span>
+        <span>type: {{ user.type }}</span>
+        <span>description: {{ user.description }}</span>
       </div>
     </div>
   `,
@@ -32,17 +36,12 @@ import * as userActions from './actions/user.actions';
       .wrapper > div {
         background: #eee;
         padding: 1em;
+        display: grid;
+        grid-template-columns: 1;
       }
 
       .wrapper > div:nth-child(odd) {
         background: #ddd;
-      }
-
-      .nested {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1em;
-        grid-auto-rows: minmax(10px, auto);
       }
     `
   ]
