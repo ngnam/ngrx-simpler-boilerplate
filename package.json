@@ -8,10 +8,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "ng build --prod",
+    "build": "ng build --prod  --base-href https://ngnam.github.io/ngrx-simpler-boilerplate/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "npx ngh --repo=https://github.com/ngnam/ngrx-simpler-boilerplate.git --dir=dist/nng-get-json"
   },
   "private": true,
   "dependencies": {
@@ -39,6 +40,7 @@
     "@angular/language-service": "~7.2.0",
     "@ngrx/schematics": "^7.4.0",
     "@types/node": "~8.9.4",
+    "angular-cli-ghpages": "^0.5.3",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
